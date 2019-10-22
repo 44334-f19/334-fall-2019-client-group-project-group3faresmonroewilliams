@@ -16,7 +16,9 @@ body {
     margin-left: 0px;
 }
 
-
+p {
+  padding: 35px;
+}
  .header img {
      display: block;
      margin-left: auto;
