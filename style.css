@@ -1,18 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Flamenco|Thasadith:400,400i,700&display=swap');
+
 header
-{
-    
-    background-color: #fccbcb;
-    
-}
- .header img
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-
-
-
+{ background-color: #fccbcb;}
