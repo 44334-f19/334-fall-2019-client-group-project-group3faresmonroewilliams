@@ -16,9 +16,13 @@ body {
     margin-left: 0px;
 }
 
+
 p {
   padding: 35px;
 }
+
+
+
  .header img {
      display: block;
      margin-left: auto;
@@ -28,3 +32,78 @@ p {
 body h2 {text-align: center;
         font-size: 40px;
         text-decoration: underline;}
+
+nav
+{
+    position: relative; /* for drop down menu */
+}
+
+nav ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li 
+{
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Drop Down Menu */
+nav ul ul 
+    {
+        position: absolute;
+        left: 130px;
+        top: 80px;
+        background-color: #b3c7e6;
+        padding: 0px;
+        display: none;
+        text-align: left;
+    }
+
+nav ul ul li
+    {
+        border: 1px solid #00005d;
+        display: block;
+        width: 9em;
+        padding-left: 1em;
+        margin-left: 0px;
+    }
+
+nav li:hover ul
+    {
+        display: block;
+    }
+
+/* Drop Down Menu End */
+
+.center li
+{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-right li 
+{
+  float: right;
+    padding-top: 20px;
+    top: 50%;
+    left: 50%;
+}
+
+.center-left li
+{
+    float: left;
+    padding-top: 25px;
+    top: 50%;
+    left: 50%;
+}
