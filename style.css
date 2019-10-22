@@ -5,18 +5,17 @@ header
     
     background-color: #fccbcb;
 }
+
  .header img
-{float:left;
+{
+    float:left;
     
 }
+
 .header h1 
 {
     position: relative;
     top: 18px;
     left:10px;
 }
-
-
-
-
 
