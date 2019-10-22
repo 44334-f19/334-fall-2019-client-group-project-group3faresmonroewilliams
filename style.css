@@ -16,12 +16,13 @@ body {
     margin-left: 0px;
 }
 
-.header h1 
-{
-    position: relative;
-    top: 18px;
-    left:10px;
+
+p {
+  padding: 35px;
 }
+
+
+
 
  .header img {
      display: block;
