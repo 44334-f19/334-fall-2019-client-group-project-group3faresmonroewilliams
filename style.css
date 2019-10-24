@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Flamenco|Thasadith:400,400i,700&display=swap');
 
 header
-
 {
     
     background-color: #fccbcb;
@@ -137,4 +136,27 @@ nav li:hover ul
     padding-left: 100px;
     top: 50%;
     left: 50%;
+}
+
+.disappear
+{
+    display: none;
+}
+
+footer
+{
+    
+    background-color: #fccbcb;
+    text-align: center;
+}
+
+/* Create Media Queries */
+@media only screen and (max-width: 1024px) 
+{
+	
+} 
+
+@media only screen and (max-width: 768px) 
+{ 
+	
 }
