@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Flamenco|Thasadith:400,400i,700&display=swap');
 
-header
-
-{
-    
+header{
     background-color: #fccbcb;
+}
+
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 150%;
+    max-width: 150%;
 }
 
 body {
@@ -51,13 +56,18 @@ nav ul
   overflow: hidden;
 }
 
+nav a
+{
+    text-decoration: none;
+}
+
 nav li 
 {
   float: left;
   display: block;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  font-size: 1.2em;
 }
 
 /* Drop Down Menu */
@@ -92,6 +102,9 @@ nav li:hover ul
 {
     float: none;
     position: absolute;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -101,6 +114,17 @@ nav li:hover ul
 {
   float: right;
     padding-top: 20px;
+    padding-right: 130px;
+    padding-left: 250px;
+    top: 50%;
+    left: 50%;
+}
+
+.center-slightright li 
+{
+  float: right;
+    padding-top: 20px;
+    padding-right: 190px;
     top: 50%;
     left: 50%;
 }
@@ -108,7 +132,18 @@ nav li:hover ul
 .center-left li
 {
     float: left;
-    padding-top: 25px;
+    padding-top: 20px;
+    padding-left: 225px;
+    padding-right: 50px;
+    top: 50%;
+    left: 50%;
+}
+
+.center-slightleft li
+{
+    float: left;
+    padding-top: 20px;
+    padding-left: 100px;
     top: 50%;
     left: 50%;
 }
