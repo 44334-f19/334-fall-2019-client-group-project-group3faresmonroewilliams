@@ -14,19 +14,6 @@ header img
     max-width: 150%;
 }
 
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 body 
 {
     display: block;
@@ -69,6 +56,7 @@ h2
 
 body h2 {text-align: center;
         font-size: 40px;}
+
 h3 {font-size: 30px;
    text-align: center;
     color:darkslategray;}
@@ -190,19 +178,25 @@ footer
     color: #000000;
 }
 
-/*
+
 .container 
 {
-  position: relative;
+    margin-top: -300px;
 }
 
-#clip {
-  position: absolute;
-  clip: rect(0, 100px, 200px, 0);
-  /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option 
+#rectangular 
+{
+  clip-path: inset(300px -300px 300px -300px);
 }
-*/
 
+main img
+{
+    
+    margin-bottom: -300px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /* Create Media Queries */
 @media only screen and (max-width: 1024px) 
