@@ -26,23 +26,41 @@ header img
   left: 50%;
   transform: translate(-50%, -50%);
 }
-body {
+
+body 
+{
     display: block;
     margin: 0px;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-    margin-left: 0px;}
+    margin-left: 0px;
+}
 
 
 p 
 {
-  padding: 45px;
-    color: gray;
-font-size: 20px;
+
+  padding left: 45px;
+padding right: 45px;
+  font-size: 20px;
 }
 
-h2 {  color: darkslategray;}
+main
+{
+
+    color: gray;
+}
+
+h2 
+{ 
+    color: darkslategray;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+
 
  .header img {
      display: block;
@@ -51,8 +69,17 @@ h2 {  color: darkslategray;}
 
 
 body h2 {text-align: center;
-        font-size: 40px;
-        text-decoration: underline;}
+        font-size: 40px;}
+h3 {font-size: 30px;
+   text-align: center;
+    color:darkslategray;}
+
+ .header img 
+{
+     display: block;
+     margin-left: auto;
+    margin-right: auto; }
+
 
 nav
 {
@@ -82,30 +109,21 @@ nav li
 }
 
 /* Drop Down Menu */
-nav ul ul 
-    {
-        position: absolute;
-        left: 130px;
-        top: 80px;
-        background-color: #b3c7e6;
-        padding: 0px;
-        display: none;
-        text-align: left;
-    }
 
-nav ul ul li
-    {
-        border: 1px solid #00005d;
-        display: block;
-        width: 9em;
-        padding-left: 1em;
-        margin-left: 0px;
-    }
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
 
-nav li:hover ul
-    {
-        display: block;
-    }
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+}
 
 /* Drop Down Menu End */
 
@@ -119,6 +137,7 @@ nav li:hover ul
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: inline-block;
 }
 
 .center-right li 
@@ -169,7 +188,22 @@ footer
     
     background-color: #fccbcb;
     text-align: center;
+    color: #000000;
 }
+
+/*
+.container 
+{
+  position: relative;
+}
+
+#clip {
+  position: absolute;
+  clip: rect(0, 100px, 200px, 0);
+  /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option 
+}
+*/
+
 
 /* Create Media Queries */
 @media only screen and (max-width: 1024px) 
