@@ -14,19 +14,6 @@ header img
     max-width: 150%;
 }
 
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 body 
 {
     display: block;
@@ -191,7 +178,7 @@ footer
     color: #000000;
 }
 
-/*
+
 .container 
 {
   position: relative;
@@ -200,9 +187,7 @@ footer
 #clip {
   position: absolute;
   clip: rect(0, 100px, 200px, 0);
-  /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option 
 }
-*/
 
 
 /* Create Media Queries */
