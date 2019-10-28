@@ -184,11 +184,19 @@ footer
   position: relative;
 }
 
-#clip {
-  position: absolute;
-  clip: rect(0, 100px, 200px, 0);
+#rectangular 
+{
+  clip-path: inset(300px -300px 300px -300px);
 }
 
+main img
+{
+    margin-top: -300px;
+    margin-bottom: -300px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /* Create Media Queries */
 @media only screen and (max-width: 1024px) 
