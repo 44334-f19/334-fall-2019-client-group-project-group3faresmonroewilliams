@@ -30,8 +30,6 @@ p
 
   padding left: 45px;
 padding right: 45px;
-
-
   font-size: 20px;
 }
 
@@ -180,10 +178,19 @@ footer
     color: #000000;
 }
 
-body
+/*
+.container 
 {
-    margin-bottom: -140px;
+  position: relative;
 }
+
+#clip {
+  position: absolute;
+  clip: rect(0, 100px, 200px, 0);
+  /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option 
+}
+*/
+
 
 /* Create Media Queries */
 @media only screen and (max-width: 1024px) 
