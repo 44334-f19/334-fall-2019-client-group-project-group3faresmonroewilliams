@@ -198,9 +198,7 @@ clip-path: inset(300px -300px 300px -300px);
 }
 
 main img
-{
-    
-    margin-bottom: 0px;
+
     display: block;
     margin-right: auto;
     margin-left: auto;
