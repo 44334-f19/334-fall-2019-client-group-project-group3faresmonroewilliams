@@ -21,13 +21,15 @@ body
     margin-bottom: 0px;
     margin-left: 0px;
 }
-p 
-{
-margin-right: 45px;
+p {
+    margin-right: 45px;
     margin-left: 45px;
-  padding left: 45px;
-padding right: 45px;
-  font-size: 20px;
+    padding left: 45px;
+    padding right: 45px;
+    font-size: 20px;
+}
+
+.contact {text-align: center;
 }
 
 main
@@ -63,7 +65,7 @@ body h2 {text-align: center;
 
 h3 {font-size: 35px;
    text-align: left;
-    color:darkslategray;
+    color: darkslategray;
     padding-left: 45px;
     margin-bottom:-20px;}
 
@@ -180,11 +182,19 @@ footer
 
 /*Banner image begin*/
 
-main img
+.banner
 {
     width: 100%;
 }
 /*Banner Image ends*/
+
+/*Breed Info Side-pic*/
+.side-pic {width: auto;
+    margin-left: 45px;
+    padding left: 45px;
+    padding right: 45px;
+    margin-top: 60px;}
+
 
 /* Create Media Queries */
 @media only screen and (max-width: 1024px) 
@@ -260,7 +270,7 @@ main img
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #fccbcb;
 }
 
 /* Fading animation */
