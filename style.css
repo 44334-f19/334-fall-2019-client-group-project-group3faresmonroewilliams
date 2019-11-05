@@ -149,6 +149,16 @@ nav li
 
 /* Drop Down Menu End */
 
+#navbar {
+  background-color: #fff;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .center li
 {
     float: none;
