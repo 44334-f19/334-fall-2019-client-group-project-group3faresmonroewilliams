@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Flamenco|Thasadith:400,400i,700&display=swap');
 
+/* Header CSS */
 header
 {
     background-color: #fccbcb;
@@ -12,6 +13,7 @@ header img
     max-height: 150%;
     max-width: 150%;
 }
+/* Header CSS End */
 
 body 
 {
@@ -21,16 +23,15 @@ body
     margin-bottom: 0px;
     margin-left: 0px;
 }
+
 p 
 {
-margin-right: 45px;
+    margin-right: 45px;
     margin-left: 45px;
     padding-left: 45px;
     padding-right: 45px;
     font-size: 20px;
-}
-
-.contact {text-align: center;
+    text-align: center;
 }
 
 main
@@ -46,7 +47,6 @@ h2
     font-size: 40px;
     text-decoration: underline;
 }
-
 
 
  .header img {
@@ -125,10 +125,6 @@ a:hover {
     color: #CCCCFF;
 }
 
-a:active {
-    color: #fccbcb;
-}
-
 /* Drop Down Menu */
 
 .dropdown {
@@ -148,7 +144,7 @@ a:active {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   float: none;
-  top: 62%;
+  top: 70%;
   left: 45%;
     }
 
@@ -163,6 +159,15 @@ a:active {
 
 .dropdown-content a:hover {
   background-color: #fccbcb;
+    color: #CCCCFF;
+}
+
+.dropdown-content a:link {
+    color: #454747;
+}
+
+.dropdown-content a:visited {
+    color: #454747;
 }
 
 .dropdown:hover .dropdown-content {
@@ -171,23 +176,28 @@ a:active {
 
 /* Drop Down Menu End */
 
+/* Sticky Nav Bar */
+
 #navbar {
   background-color: #fff;
+  border-bottom: 1px solid #CCCCFF;
 }
 
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+    z-index: 999;
 }
 
+/* Sticky Nav Bar End */
+
+/* Centered Horizontal Nav */
 .center li
 {
     float: none;
     position: absolute;
     padding-top: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -233,6 +243,8 @@ a:active {
     top: 50%;
     left: 50%;
 }
+
+/* Centered Horizontal Nav End */
 
 .disappear
 {
