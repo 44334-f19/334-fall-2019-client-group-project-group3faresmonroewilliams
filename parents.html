@@ -13,7 +13,8 @@
             <img src="Images/final%20logo.png" alt="logo" width="250" height="125s">
         </div>
  </header>
-     <nav>
+     <div id="navbar">
+        <nav>
         <ul>
             <div class="center-left">
                 <li><a href="index.html">Home</a></li>
@@ -39,6 +40,7 @@
             </div>
         </ul>
     </nav>
+    </div>
     <main>
           <img class="banner" src="images/parent-dogs-banner.jpg" height="486" width="1280">
       
@@ -98,5 +100,20 @@
         <a href="https://www.twitter.com"><img src="Images/twitter.png" alt="twitter" width="65" height="65"></a>
         <a href="https://www.facebook.com"><img src="Images/facebook.png" alt="facebook" width="65" height="65"></a>
     </footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </body> 
 </html> 
