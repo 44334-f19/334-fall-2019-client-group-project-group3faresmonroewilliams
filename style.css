@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Flamenco|Thasadith:400,400i,700&display=swap');
 
+/* Header CSS */
 header
 {
     background-color: #fccbcb;
@@ -12,6 +13,7 @@ header img
     max-height: 150%;
     max-width: 150%;
 }
+/* Header CSS End */
 
 body 
 {
@@ -21,16 +23,15 @@ body
     margin-bottom: 0px;
     margin-left: 0px;
 }
+
 p 
 {
-margin-right: 45px;
+    margin-right: 45px;
     margin-left: 45px;
     padding-left: 45px;
     padding-right: 45px;
     font-size: 20px;
-}
-
-.contact {text-align: center;
+    text-align: center;
 }
 
 main
@@ -48,7 +49,11 @@ h2
 }
 
 
-.header img {
+
+
+
+ .header img {
+
      display: block;
      margin-left: auto;
      margin-right: auto; }
@@ -76,21 +81,32 @@ h2
 #dadtext {grid-row: 3/4;
         grid-column: 1/2;
     text-align: center;}
+
 #dadpic {grid-row: 3/4;
     grid-column: 2/3;
          margin-left: auto;
         margin-right: auto;
-        width 60%;
-        padding-top: 20px;}
+    width 60%;}
+
+
+/*breed info grid box*/
+
+#breed-info {display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;}
+#info-side-pic {grid-row: 1/2;
+                grid-column: 1/2;}
+#breed-info-txt {grid-row: 1/2;
+                grid-column: 2/3;}
+
 
 
 body h2 {text-align: center;
         font-size: 40px;}
 
-h3 {font-size: 35px;
-   text-align: left;
+body h3 {font-size: 35px;
     color: darkslategray;
-    padding-left: 45px;
+    padding-left: 85px;
     margin-bottom:-20px;}
 
 nav
@@ -106,6 +122,7 @@ nav ul
   overflow: hidden;
 }
 
+
 nav a
 {
     text-decoration: none;
@@ -120,7 +137,17 @@ nav li
   font-size: 1.2em;
 }
 
-/* Drop Down Menu */
+a:link {
+    color: #454747;
+}
+
+a:visited {
+    color: #454747;
+}
+
+a:hover {
+    color: #CCCCFF;
+}
 
 .dropdown {
   float: left;
@@ -139,8 +166,9 @@ nav li
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   float: none;
-  top: 62%;
+    top: 62%;
   left: 45%;}
+
 
 .dropdown-content a {
   float: none;
@@ -152,7 +180,16 @@ nav li
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #fccbcb;
+    color: #CCCCFF;
+}
+
+.dropdown-content a:link {
+    color: #454747;
+}
+
+.dropdown-content a:visited {
+    color: #454747;
 }
 
 .dropdown:hover .dropdown-content {
@@ -161,18 +198,34 @@ nav li
 
 /* Drop Down Menu End */
 
+/* Sticky Nav Bar */
+
+#navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #CCCCFF;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+    z-index: 999;
+}
+
+/* Sticky Nav Bar End */
+
+/* Centered Horizontal Nav */
 .center li
 {
     float: none;
     position: absolute;
     padding-top: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: inline-block;
 }
+
 
 .center-right li 
 {
@@ -193,6 +246,7 @@ nav li
     left: 50%;
 }
 
+
 .center-left li
 {
     float: left;
@@ -211,6 +265,8 @@ nav li
     top: 50%;
     left: 50%;
 }
+
+/* Centered Horizontal Nav End */
 
 .disappear
 {
@@ -290,7 +346,8 @@ footer
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+    color: black;
+  background-color: #fccbcb;
 }
 
 
@@ -315,8 +372,12 @@ footer
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #fccbcb;
+.active {
+    background-color: #fccbcb;
+}
+
+.dot:hover {
+  background-color: #CCCCFF;
 }
 
 /* Fading animation */
@@ -335,6 +396,14 @@ footer
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+footer .contact-footer {
+    float: left;
+}
+
+footer .contact-social {
+    float: inherit;
 }
 
 footer a
