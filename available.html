@@ -103,8 +103,8 @@
     </div>
 
   <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides2(1)">&#10095;</a>
 </div>
 <br>
 
@@ -113,6 +113,7 @@
   <span class="dot2" onclick="currentSlide(1)"></span>
   <span class="dot2" onclick="currentSlide(2)"></span>
   <span class="dot2" onclick="currentSlide(3)"></span>
+
 </div>
 
 
@@ -184,6 +185,7 @@
 <script>
         var slideIndex = 2;
 showSlides(slideIndex);
+showSlides2(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -193,6 +195,15 @@ function plusSlides(n) {
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
+}
+// Next/previous controls
+function plusSlides2(n) {
+  showSlides2(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide2(n) {
+  showSlides2(slideIndex = n);
 }
 
 function showSlides(n) {
@@ -210,6 +221,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
         var slideIndex = 2;
 showSlides(slideIndex);
 
@@ -223,7 +235,8 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+
+function showSlides2(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides fade2");
   var dots = document.getElementsByClassName("dot2");
