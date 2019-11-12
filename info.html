@@ -13,6 +13,7 @@
             <img src="Images/final%20logo.png" alt="logo" width="250" height="125s">
         </div>
        </header>
+    <div id="navbar">
     <nav>
         <ul>
             <div class="center-left">
@@ -39,6 +40,7 @@
             </div>
         </ul>
     </nav>
+    </div>
     <main>
         
           <img class="banner" src="images/breed-info-banner.jpg" height="486" width="1280">
@@ -99,5 +101,19 @@ Don’t let the Yorkie’s daintiness fool you. Tenacious, feisty, brave, and so
         <div id="akcpic"><img class="akc" src="Images/AKC-Logo.png" alt="akc" width="200" height="150"></div>
         </div>
     </footer>
+    <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </body> 
 </html> 
