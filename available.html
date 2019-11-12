@@ -87,17 +87,17 @@
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
+  <div class="mySlides fade2">
     <div class="numbertext">1 / 3</div>
     <img  src="Images/availablepup2.jpg" alt="avapup2" height="350" width="500">
   </div>
 
-  <div class="mySlides fade">
+  <div class="mySlides fade2">
     <div class="numbertext">2 / 3</div>
             <img  src="Images/availablepup2.jpg" alt="avapup2" height="350" width="500">
   </div>
 
-  <div class="mySlides fade">
+  <div class="mySlides fade2">
     <div class="numbertext">3 / 3</div>
                <img  src="Images/availablepup2.jpg" alt="avapup2" height="350" width="500">
     </div>
@@ -110,9 +110,9 @@
 
 <!-- The dots/circles -->
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot2" onclick="currentSlide(1)"></span>
+  <span class="dot2" onclick="currentSlide(2)"></span>
+  <span class="dot2" onclick="currentSlide(3)"></span>
 </div>
 
 
@@ -199,6 +199,34 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides fade");
   var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+        var slideIndex = 2;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides fade2");
+  var dots = document.getElementsByClassName("dot2");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
