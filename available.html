@@ -46,13 +46,77 @@
         <div id= "availablecontainer">
             
         <div id="olive">
-        <img  src="Images/availablepup1.jpg" alt="avapup1" height="350" width="500"> 
+             <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+            <img  src="Images/availablepup1.jpg" alt="avapup1" height="350" width="500"> 
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+          <img  src="Images/availablepup1.jpg" alt="avapup1" height="350" width="500"> 
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+           <img  src="Images/availablepup1.jpg" alt="avapup1" height="350" width="500"> 
+    </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
         <h3>Olive - 2019 - $3500</h3>
         <p>Dam x Sire<br>4 week old female</p></div>
         
         <div id= "charlie">
+                <!-- Slideshow container -->
+<div class="slideshow-container">
 
-        <img  src="Images/availablepup2.jpg" alt="avapup2" height="350" width="500">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img  src="Images/availablepup2.jpg" alt="avapup2" height="350" width="500">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+            <img  src="Images/availablepup2.jpg" alt="avapup2" height="350" width="500">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+               <img  src="Images/availablepup2.jpg" alt="avapup2" height="350" width="500">
+    </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+    
 
         <h3>Charlie - 2019 - $3500</h3>
         <p>Dam x Sire<br> 4 week old male</p></div>
@@ -118,6 +182,35 @@
         </div>
     </footer>
 <script>
+        var slideIndex = 2;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides fade");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
