@@ -118,6 +118,41 @@ h2
 #akcpic {grid-row: 1/4;
         grid-column: 3/4;}
 
+/*available pups gridbox*/
+#availablecontainer{display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;}
+#olive {grid-row:1/2;
+        grid-column:1/2;
+        padding: 50px;}
+#charlie{grid-row:1/2;
+        grid-column:2/3;
+        padding: 50px;}
+#winnie {grid-row: 2/3;
+        grid-column: 1/2;
+        padding: 50px;}
+#peach {grid-row: 2/3;
+        grid-column: 2/3;
+        padding: 50px;}
+
+/*past pups gridbox*/
+#pastcontainer {display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;}
+#lucky{grid-row:1/2;
+        grid-column:1/2;
+        padding: 50px;}
+#maxwell{grid-row:1/2;
+        grid-column:2/3;
+        padding: 50px;}
+#daisy{grid-row: 2/3;
+        grid-column: 1/2;
+        padding: 50px;}
+#lex{grid-row: 2/3;
+        grid-column: 2/3;
+        padding: 50px;}
+
+
 
 body h2 {text-align: center;
         font-size: 40px;}
@@ -328,10 +363,12 @@ footer
 * {box-sizing:border-box}
 
 /* Slideshow container */
+
 .slideshow-container {
   position: relative;
   margin: auto;
 }
+
 
 /* Hide the images by default */
 .mySlides {
@@ -376,6 +413,7 @@ footer
   position: absolute;
   top: 0;
 }
+
 
 /* The dots/bullets/indicators */
 .dot {
