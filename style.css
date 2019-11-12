@@ -530,6 +530,11 @@ ul
         grid-column: 1/2;
         padding: 0px;}
 
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+    
 /*past pups gridbox*/
 #pastcontainer {display: grid;
     grid-template-columns: auto auto;
@@ -557,6 +562,18 @@ body
     margin-left: 0px;
     font-family: sans-serif, 'Arial';
 }
+    
+/*breed info grid box*/
+
+#breed-info {display: grid;
+            grid-template-columns: auto;
+            justify-content: center;}
+#info-side-pic {grid-row: 1/2;
+                grid-column: 1/2;
+                padding-bottom: 25px;
+               }
+#breed-info-txt {grid-row: 2/3;
+                grid-column: 1/2;}
     
 }
 /* End of media queries */
