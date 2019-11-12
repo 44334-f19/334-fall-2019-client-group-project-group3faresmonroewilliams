@@ -360,7 +360,7 @@ footer
 
 
 /* Hide the images by default */
-.mySlides {
+.mySlides  {
   display: none;
     object-fit: cover;
 }
@@ -405,7 +405,7 @@ footer
 
 
 /* The dots/bullets/indicators */
-.dot, .dot2 {
+.dot, .dot2, .dot3, .dot4 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -420,7 +420,7 @@ footer
     background-color: #fccbcb;
 }
 
-.dot:hover, .dot2:hover {
+.dot:hover, .dot2:hover, .dot3:hover, .dot4:hover{
   background-color: #CCCCFF;
 }
 
