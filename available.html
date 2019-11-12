@@ -110,9 +110,10 @@
 
 <!-- The dots/circles -->
 <div style="text-align:center">
-  <span class="dot2" onclick="currentSlide2(1)"></span>
-  <span class="dot2" onclick="currentSlide2(2)"></span>
-  <span class="dot2" onclick="currentSlide2(3)"></span>
+  <span class="dot2" onclick="currentSlide(1)"></span>
+  <span class="dot2" onclick="currentSlide(2)"></span>
+  <span class="dot2" onclick="currentSlide(3)"></span>
+
 </div>
 
 
@@ -220,6 +221,21 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+        var slideIndex = 2;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+
 function showSlides2(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides fade2");
