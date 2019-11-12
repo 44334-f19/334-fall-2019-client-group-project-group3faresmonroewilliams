@@ -412,7 +412,7 @@ footer
 
 
 /* The dots/bullets/indicators */
-.dot {
+.dot, .dot2 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -427,7 +427,7 @@ footer
     background-color: #fccbcb;
 }
 
-.dot:hover {
+.dot:hover, .dot2:hover {
   background-color: #CCCCFF;
 }
 
