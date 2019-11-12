@@ -106,16 +106,14 @@ h2
 /*footer container*/
 #footercontainer{display: grid;
     grid-template-columns: auto auto;
-     justify-content: center;
-    padding: 50px;}
-#contact footer {grid-row: 1/4;
+    padding-left: 0px;
+    margin-left: 0px;}
+#contactfooter {grid-row: 1/2;
                 grid-column: 1/2;
-                text-align: left;}
+                max-width: 350px;}
 #socialtxt {grid-row: 1/2;
             grid-column: 2/3;}
-#socialpics {grid-row: 2/3;
-            grid-column: 2/3;}
-#akcpic {grid-row: 1/4;
+#akcpic {grid-row: 1/2;
         grid-column: 3/4;}
 
 /*available pups gridbox*/
@@ -329,10 +327,8 @@ a:hover {
 footer
 {
     
-    background-color: #fccbcb;
-    text-align: center;
+    background-color: #fccbcb;;
     color: #000000;
-    clear: both;
 }
 
 /*Banner image begin*/
@@ -469,3 +465,13 @@ footer a
 
 footer p { 
     text-align: justify;}
+
+footer p{text-align: justify;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 25px;}
+footer h3 {font-size: 30px;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 25px;}
+
