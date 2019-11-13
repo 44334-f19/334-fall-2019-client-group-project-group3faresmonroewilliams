@@ -45,6 +45,7 @@ body h3
     color: darkslategray;
     padding-left: 85px;
     margin-bottom:-20px;
+    margin-bottom:-20px;
 }
 /* Body CSS End */
 
@@ -659,9 +660,20 @@ footer h3
         display: grid;
         grid-template-columns: auto auto auto auto;
         padding-left: 0px;
-        margin-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    #footercontainer h3
+    {
+       font-size: .9em; 
+    }
+    
+    #footercontainer p
+    {
+        font-size: .8em;
+    }
+    
     #contactfooter 
     {
         grid-row: 1/2;
@@ -669,21 +681,58 @@ footer h3
         max-width: 350px;
         padding-bottom: 30px;
         padding-left: 10px;
+        margin-left: auto;
+        margin-right: auto;   
     }
 
     #socialtxt
     {
         grid-row: 2/3;
         grid-column: 3/4;
-        padding-bottom: 20px;
-        padding-left: 30px
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
     }
 
     #akcpic
     {
         grid-row: 3/4;
         grid-column: 3/4;
-        padding-left: 70px;
+        padding-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    footer .contact-footer 
+    {
+        clear: both;
+    }
+
+    footer .contact-social 
+    {
+        clear: both;
+    }
+
+    footer a
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    footer p
+    { 
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 0px;
+    }
+    
+    footer h3 
+    {
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 0px;
     }
     /* Footer Container */
 
@@ -886,7 +935,10 @@ footer h3
     {
         grid-row: 1/2;
         grid-column: 1/2;
+        padding-top: 25px;
         padding-bottom: 25px;
+        margin: auto;
+        justify-content: center;
     }
 
     #breed-info-txt 
@@ -894,15 +946,12 @@ footer h3
         grid-row: 2/3;
         grid-column: 1/2;
     }
-    /* Breed Info Grid Box End*/
     
     .side-pic 
     {
         width: auto;
-        margin-left: 160px;
-        padding-left: 40px;
-        padding-right: 160px;
-        margin-top: 40px;
+        padding: 0px;
+        margin: 0px;
     }
     /* Breed Info Grid Box End */
 } 
@@ -1033,7 +1082,7 @@ footer h3
     {
         grid-row: 3/4;
         grid-column: 2/3;
-        padding-left: 70px;
+        padding-left: 0px;
     }
     /* Footer Container End */
     
@@ -1188,7 +1237,10 @@ footer h3
     {
         grid-row: 1/2;
         grid-column: 2/3;
+        padding-top: 25px;
         padding-bottom: 25px;
+        margin: auto;
+        justify-content: center;
     }
     
     #breed-info-txt 
@@ -1196,24 +1248,13 @@ footer h3
         grid-row: 2/3;
         grid-column: 2/3;
     }
-    /* Breed Info Grid Box End */
 
     .side-pic 
     {
         width: auto;
-        margin-left: 35px;
-        padding-left: 40px;
-        padding-right: 35px;
-        margin-top: 40px;
+        padding: 0px;
+        margin: 0px;
     }
-    
-    .side-pic img 
-    {
-        width: auto;
-        margin-left: 75px;
-        padding-left: 40px;
-        padding-right: 75px;
-        margin-top: 40px;
-    }
+    /* Breed Info Grid Box End */
 }
 /* Media Queries End */
