@@ -658,7 +658,7 @@ footer h3
     #footercontainer
     {
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto;
         padding-left: 0px;
         margin-left: auto;
         margin-right: auto;
@@ -677,7 +677,7 @@ footer h3
     #contactfooter 
     {
         grid-row: 1/2;
-        grid-column: 3/4;
+        grid-column: 2/3;
         max-width: 350px;
         padding-bottom: 30px;
         padding-left: 10px;
@@ -688,7 +688,7 @@ footer h3
     #socialtxt
     {
         grid-row: 2/3;
-        grid-column: 3/4;
+        grid-column: 2/3;
         margin-left: auto;
         margin-right: auto;
         width: auto;
@@ -697,7 +697,7 @@ footer h3
     #akcpic
     {
         grid-row: 3/4;
-        grid-column: 3/4;
+        grid-column: 2/3;
         padding-left: 0px;
         margin-left: auto;
         margin-right: auto;
