@@ -420,8 +420,9 @@ footer .contact-social
 
 footer a
 {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: auto;
+    padding-right: auto;
+    font-size: 1.1em;
 }
 
 footer p
@@ -719,9 +720,9 @@ footer h3
 
     footer a
     {
-        padding-left: 0px;
-        padding-right: 0px;
-        font-size: .9em;
+        padding-left: auto;
+        padding-right: auto;
+        font-size: 1.1em;
     }
 
     footer p
