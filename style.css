@@ -184,6 +184,7 @@ p
     grid-column: 1/2;
     max-width: 350px;
     text-align: center; 
+    font-size: 1.1em;
 }
 
 #socialtxt 
@@ -433,7 +434,7 @@ footer p
 
 footer h3 
 {
-    font-size: 30px;
+    font-size: 1.2em;
     padding: 0px;
     margin: 0px;
     margin-left: 25px;
