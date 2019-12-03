@@ -596,7 +596,7 @@ footer h3
         height: auto;
     }
 
-    p 
+    body p 
     {
         margin-right: 25px;
         margin-left: 25px;
@@ -680,12 +680,12 @@ footer h3
 
     #footercontainer h3
     {
-       font-size: 1.1em; 
+       font-size: 1.3em; 
     }
     
     #footercontainer p
     {
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
     
     #contactfooter 
