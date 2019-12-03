@@ -1108,6 +1108,16 @@ footer h3
         padding-right: auto;
     }
     
+    #footercontainer h3
+    {
+       font-size: 1.3em; 
+    }
+    
+    #footercontainer p
+    {
+        font-size: 1.3em;
+    }
+    
     /* Footer Container End */
     
     /* Parents Grid Box*/
