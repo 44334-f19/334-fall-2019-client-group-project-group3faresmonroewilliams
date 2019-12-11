@@ -30,7 +30,7 @@ body
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    font-family: "Roboto", sans-serif;
+    font-family: sans-serif;
 }
 
 body h2 
@@ -53,6 +53,7 @@ body h3
 nav
 {
     position: relative;
+    font-family: "Flamenco"
 }
 
 nav a
@@ -72,7 +73,6 @@ nav li
 /* Main CSS */
 main
 {
-
     color: gray;
 }
 /* Main CSS End */
